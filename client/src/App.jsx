@@ -66,7 +66,7 @@ const App = () => {
   const handleSubmit = async(e) => {
     e.preventDefault();
     try {
-      const res = await axios.post("http://localhost:3000/api/auth", values);
+      const res = await axios.post("http://172.31.30.5:3000/api/auth", values);
       console.log(res.data)
     }catch(err) {
       console.log(err)
