@@ -9,7 +9,7 @@ const buildPath = path.join(_dirname, "../client/build");
 // mongodb+srv://validator:90Wg40wjWM6blvDj@artboardz.b8xqc.mongodb.net/?retryWrites=true&w=majority
 // mongodb+srv://emmy:iorolun45@firstcluster.fypsmgo.mongodb.net/form_validation?retryWrites=true&w=majority
 mongoose
-  .connect("mongodb+srv://user:PbRlNXdsVsibM4LJ@artboardz.b8xqc.mongodb.net/?retryWrites=true&w=majority")
+  .connect("mongodb+srv://emmyzee45:vNDW3Dn3rB2BvR4e@artboardz.b8xqc.mongodb.net/?retryWrites=true&w=majority")
   .then(() => console.log("DB Connection Successfull!"))
   .catch((err) => {
     console.log(err);
