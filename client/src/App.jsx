@@ -76,6 +76,8 @@ const App = () => {
   const onChange = (e) => {
     setValues({ ...values, [e.target.name]: e.target.value });
   };
+  console.log(window.location.hostname);
+  console.log(window.location.hostname.split(":")[0])
 
   return (
     <div className="app">
