@@ -66,7 +66,7 @@ const App = () => {
   const handleSubmit = async(e) => {
     e.preventDefault();
     try {
-      const res = await axios.post("https://ec2-35-163-13-192.us-west-2.compute.amazonaws.com/api/auth", values);
+      const res = await axios.post("http://ec2-35-163-13-192.us-west-2.compute.amazonaws.com:3000/api/auth", values);
       console.log(res.data)
     }catch(err) {
       console.log(err)
