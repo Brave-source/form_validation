@@ -2,7 +2,6 @@ import { useState } from "react";
 import axios from "axios"
 import "./app.css";
 import FormInput from "./components/FormInput";
-import {baseURL} from "./lib/index"
 
 const App = () => {
   const [values, setValues] = useState({
@@ -67,7 +66,7 @@ const App = () => {
   const handleSubmit = async(e) => {
     e.preventDefault();
     try {
-      const res = await axios.post(`${baseURL}/api/auth`, values);
+      const res = await axios.post("http://172.31.25.35:3000/api/auth", values);
       console.log(res.data)
     }catch(err) {
       console.log(err)
